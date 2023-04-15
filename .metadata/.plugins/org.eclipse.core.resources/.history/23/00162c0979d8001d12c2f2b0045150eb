@@ -1,0 +1,11 @@
+package com.first;
+
+public class Banking {
+	public static void greetcustomer() {
+		System.out.println("Hello welcome to the statebanking");
+	}
+	public static void main(String[] args) {
+	greetcustomer();
+	}
+	
+}

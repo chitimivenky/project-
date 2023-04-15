@@ -1,0 +1,17 @@
+
+Jan 30, 2023 15:29:44.372 NEW SESSION
+Jan 30, 2023 15:29:44.373 [12728:10136:0130/152944.370:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+
+Jan 30, 2023 15:42:47.392 NEW SESSION
+Jan 30, 2023 15:42:47.392 [8388:6844:0130/154247.390:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+Jan 30, 2023 15:43:09.758 [8388:6844:0130/154309.758:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+
+Jan 31, 2023 15:50:52.908 NEW SESSION
+Jan 31, 2023 15:50:52.908 [5256:2764:0131/155052.906:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+Jan 31, 2023 15:51:14.957 [11676:1068:0131/155114.956:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+
+Mar 03, 2023 10:29:53.144 NEW SESSION
+Mar 03, 2023 10:29:53.144 [9304:12760:0303/102953.142:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+
+Apr 05, 2023 07:46:19.588 NEW SESSION
+Apr 05, 2023 07:46:19.588 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.

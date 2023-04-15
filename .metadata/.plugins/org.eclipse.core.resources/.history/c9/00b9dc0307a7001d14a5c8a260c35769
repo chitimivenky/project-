@@ -1,0 +1,43 @@
+package com.actitime.testscript;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class CcMainMethod {
+static {
+	System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+}
+@Test
+public void Ccustomer() {
+WebDriver driver=new ChromeDriver();
+driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+driver.get("https://demo.actitime.com/login.do");
+LoginPage l=new LoginPage(driver);
+l.setlogin("admin","manager");
+driver.findElement(By.id("container_tasks")).click();
+driver.findElement(By.xpath("//div[text()='Add New']")).click();
+driver.findElement(By.xpath("//div[text()='+ New Customer']")).click();
+driver.findElement(By.xpath("(//input[@placeholder='Enter Customer Name'])[2]")).sendKeys("HDFC_003");
+driver.findElement(By.xpath("(//textarea[@class='textarea'])[9]")).sendKeys("Banking  Project");
+driver.findElement(By.xpath("//span/div/div[1]/div[3]")).click();
+driver.findElement(By.xpath("//span/div/div[2]/div/div[1]/div/div[7]")).click();
+driver.findElement(By.xpath("//div[text()='Create Customer']")).click();
+
+String etitle = "HDFC_003";
+		List<WebElement> atitle = driver.findElements(By.xpath("//div[text()='HDFC_003']"));
+			int cou = atitle.size();
+		for (int i = 0; i <cou; i++) {
+			String text = atitle.get(i).getText();
+			System.out.println(text);
+		}
+		//Assert.assertEquals(atitle,etitle);
+}
+}

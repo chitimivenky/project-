@@ -1,0 +1,7 @@
+package com.Mi.com.testscript;
+
+import com.actitime.generic.BaseClass;
+
+public class MainMethod extends BaseClass {
+	}
+}

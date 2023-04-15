@@ -1,0 +1,31 @@
+package com.inputFromConsloe;
+
+import java.util.Scanner;
+
+
+public class Userinput {
+	public static void main(String[] args) 
+	{
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the your name?");
+		String name = sc.nextLine();
+		String exp="venkey";
+		System.out.println(exp);
+		System.out.println(name);
+		if(name==exp) 
+		{
+			System.out.println("hii");
+		}
+		
+//		System.out.println("Hey how are you "+name);
+//		System.out.println("what was the day "+ name);
+//		String name2= sc.nextLine();
+//		System.out.println("oka "+name);
+//		System.out.println("what is your age  "+name);
+//		int age = sc.nextInt();
+//		System.out.println("thankyou for giving the information..... "+name);
+
+
+	}
+}

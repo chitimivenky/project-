@@ -1,0 +1,38 @@
+package com.mi.script;
+
+import java.util.List;
+
+import javax.xml.xpath.XPath;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
+import org.openqa.selenium.support.PageFactory;
+import jakarta.xml.bind.Element;
+
+public class PhoneClass {
+	@FindBy(linkText = "Phone")
+	private WebElement phone;
+public WebElement getPhone() {
+		return phone;
+	}
+	public void setPhone(WebElement phone) {
+		this.phone = phone;
+	}
+@FindBys({
+	@FindBy(xpath = "//h2[@class='site-banner__title mi-brand mi-brand--xiaomi']")
+})
+private List<Element> siteBanner ;
+public List<Element> getSiteBanner() {
+	return siteBanner;
+}
+public void setSiteBanner(List<Element> siteBanner) {
+	this.siteBanner = siteBanner;
+}
+public PhoneClass(WebDriver driver) {
+PageFactory.initElements(driver,this);
+	
+}
+}

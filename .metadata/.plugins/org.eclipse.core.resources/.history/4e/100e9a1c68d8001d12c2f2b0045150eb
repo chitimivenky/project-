@@ -1,0 +1,14 @@
+package com.first;
+
+public class Class1 {
+	public  String name= "venkey";
+	public double hight= 7.5;
+	public double weight=63.0; 
+	
+public static void main(String[] args) {
+	//System.out.println("hii venkey");
+	Class1 cl=new Class1();
+	System.out.println(Character.SIZE/8);
+	
+}
+}

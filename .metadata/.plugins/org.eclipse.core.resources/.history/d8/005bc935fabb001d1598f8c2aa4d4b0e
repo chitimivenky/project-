@@ -1,0 +1,28 @@
+package com.ameer.example;
+
+import java.util.Scanner;
+
+public class nnn {
+	double totalammount;
+	double balance;
+	long accountno ;
+	double enteramount;
+	double debit;
+ public static void main(String[] args) {
+	nnn L = new nnn();
+	Scanner Sc = new Scanner(System.in);
+	 System.out.println("Enter Account Number");
+	 L.accountno = Sc.nextLong();
+	 
+	if (L.accountno == 25463) {
+		System.out.println("Bank name :SBI"+L.totalammount);
+		L.totalammount = 6000;
+	}
+	System.out.println("Enter ammount");
+	 L.enteramount = Sc.nextDouble();
+
+		 L.debit = L.totalammount - L.enteramount; 
+		System.out.println(L.debit+" "+ "is your remaining balance");
+	}
+	
+}

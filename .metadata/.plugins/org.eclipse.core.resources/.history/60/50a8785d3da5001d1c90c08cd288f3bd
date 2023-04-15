@@ -1,0 +1,42 @@
+package com.mi.script;
+
+import java.util.List;
+
+import javax.xml.xpath.XPath;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
+import org.openqa.selenium.support.PageFactory;
+import org.w3c.dom.css.CSSValue;
+
+import jakarta.xml.bind.Element;
+
+public class PhoneClass {
+	@FindBy(linkText = "Phone")
+	private WebElement phone;
+public WebElement getPhone() {
+		return phone;
+	}
+	public void setPhone(WebElement phone) {
+		this.phone = phone;
+	}
+ @FindBys({
+	 @FindBy(xpath = "//*[@id=\\\"root\\\"]/main/section[1]/div/div/div[2]/div/div/div/h2")
+ })
+ private List<Element> banner;
+ 
+
+public List<Element> getBanner() {
+	return banner;
+}
+public void setBanner(List<Element> banner) {
+	this.banner = banner;
+}
+public PhoneClass(WebDriver driver) {
+PageFactory.initElements(driver,this);
+	
+}
+}

@@ -1,0 +1,25 @@
+package com.first;
+
+public class Banking {
+ static	 int totalAmount= 1000;
+	public static void greetcustomer() {
+		System.out.println("Hello welcome to the statebanking");
+	}
+	public void deposit(int amount ) {
+		totalAmount=totalAmount+amount;
+	}
+public void withdrawal(int amount) {
+	totalAmount=totalAmount-amount;
+	}
+public  int getCurrentBalance() {
+	return totalAmount;
+}
+	public static void main(String[] args) {
+	greetcustomer();
+	 Banking d = new Banking();
+	 d.deposit(500);
+	 d.withdrawal(100);
+	 d.getCurrentBalance();
+	}
+	
+}

@@ -1,0 +1,31 @@
+package com.ameer.example;
+
+import java.util.Scanner;
+
+public class nnn {
+	double totalammount;
+	double balance;
+	long accountno ;
+	double enteramount;
+	double debit;
+	public 
+ public void leela() {
+	 nnn L = new nnn();
+	 System.out.println("Enter Account Number");
+	  new Scanner(System.in);
+	 L.accountno = Sc.nextLong();
+	 System.out.println("Enter ammount");
+	 L.debit = Sc.nextLong();
+ }
+ public static void main(String[] args) {
+	nnn a=new nnn();
+	a.leela();
+	if (a.accountno == 25463) {
+		System.out.println("Bank name :SBI");
+		a.totalammount = 6000;
+	}
+		 a.debit = a.totalammount -a.enteramount; 
+		System.out.println(a.debit+" "+ "is your remaining balance");
+	}
+	
+}

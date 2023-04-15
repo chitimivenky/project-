@@ -1,0 +1,14 @@
+package com.first;
+
+public class Bank {
+	public  String name= "venkey";
+	public double hight= 7.5;
+	static double weight=63.0; 
+	
+public static void main(String[] args) {
+	Class1 c= new Class1();
+System.err.println(c.hight);
+	
+	
+}
+}

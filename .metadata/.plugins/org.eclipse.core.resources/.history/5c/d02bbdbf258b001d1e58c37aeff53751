@@ -1,0 +1,37 @@
+package qsp;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Withoutduplicate {
+	static {
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		HashSet<String> h1=new HashSet<String>();
+		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.get("file:///C:/Users/MAHESH/Desktop/mtr.html");
+		WebElement mtrlistbox = driver.findElement(By.id("mtr"));
+		Select s=new Select(mtrlistbox);
+		List<WebElement> as = s.getOptions();
+		for (int i = 1; i <as.size(); i++) {
+			String text =as.get(i).getText();
+			h1.add(text);
+			if (h1.add(text)==true) {
+				System.out.println(text);
+				
+			}
+			 }
+}
+}

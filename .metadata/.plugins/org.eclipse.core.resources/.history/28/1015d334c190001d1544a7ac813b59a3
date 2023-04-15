@@ -1,0 +1,16 @@
+package encapsulation;
+
+public class School {
+
+	public static void main(String[] args) {
+Student s1=new Student("venkey", 45, 551);
+Student s2=new Student("venkew", 455, 550);
+Student s3=new Student("venkey=q", 453, 555);
+Student s4=new Student("venkey==e", 4525, 575);
+System.out.println(s2.name);
+System.out.println(s1.name);
+System.out.println(s3.name);
+System.out.println(s4.name);
+	}
+
+	}

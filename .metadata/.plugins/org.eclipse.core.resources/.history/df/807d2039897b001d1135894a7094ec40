@@ -1,0 +1,14 @@
+package qsp;
+
+import java.sql.Driver;
+
+public class DemoA {
+	System void test(webdrive drive) {
+	drive.get("https:www.google.com");
+	Object title = driver.getTitle();
+	System.out.print( title);
+	
+	
+	 
+	}
+}
