@@ -1,0 +1,6 @@
+//a[.='manufacturing']/../../td[2]
+//a[.='testing']/../../td[3]
+//a[.='support']/../../td[5] 
+//p[.='c#']/../p[2]/a
+//p[.='ruby']/../p[3]/a
+//p[.='python']/../p[4]/a
